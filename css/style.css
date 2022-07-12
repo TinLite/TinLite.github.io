@@ -90,7 +90,7 @@ footer a {
 }
 
 footer a:hover:after {
-    content: '. Image used in this page are captured by me and should not be used in any case without my permission.'
+    content: '. Photos used on this page belong to their respective owners and are not premitted for public use.'
 }
 
 footer:hover {
@@ -111,5 +111,6 @@ footer:hover {
     footer {
         left: 50vw;
         transform: translate(-50%, 0%);
+        text-align: center;
     }
 }
