@@ -1,3 +1,3 @@
 # TinLite.github.io
 
-random web
+Random self-made webpage on the internet.
