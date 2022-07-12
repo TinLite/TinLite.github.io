@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+body {
+    background-color: #1B2430;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    letter-spacing: 2vw;
+    font-size: 30vh;
+    font-weight: 500;
+    /* color: white; */
+    background-image: url('\\img\\logo-bg.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: max(100vh, 100vw);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: default;
+}
+
+.wrapper .content .link {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    gap: 2vw
+}
+
+.wrapper .content .link a {
+    font-family: 'Consolas', monospace;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    letter-spacing: 2px;
+}
+
+.wrapper .content .link a:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 4px;
+    padding: 0 20px 0 20px;
+}
+
+footer {
+    font-family: 'Consolas', monospace;
+    position: fixed;
+    bottom: 0px;
+    /* left: 50vw;
+    transform: translate(-50%, 0%); */
+    padding: 10px;
+    opacity: 10%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover:after {
+    content: '. Image used in this page are captured by me and should not be used in any case without my permission.'
+}
+
+footer:hover {
+    opacity: 50%;
+}
+
+@media(max-width: 768px) {
+    .wrapper .content .link {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .wrapper .content .link a {
+        align-self: center;
+        font-size: 6vh;
+        border-radius: 0px;
+    }
+    footer {
+        left: 50vw;
+        transform: translate(-50%, 0%);
+    }
+}
