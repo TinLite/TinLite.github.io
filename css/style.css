@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #1B2430;
     font-family: 'Roboto', sans-serif;
+    background-color: #1B2430;
 }
 
 .wrapper {
@@ -15,6 +15,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bg {
+    background-image: url('\\img\\bg.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.05;
 }
 
 .content {
@@ -35,6 +46,8 @@ body {
     background-repeat: no-repeat;
     background-position: 50%;
     cursor: default;
+    justify-self: center;
+    transform: translate(1vw, 0%)/* https://stackoverflow.com/a/6949867/17131337 */
 }
 
 .wrapper .content .link {
